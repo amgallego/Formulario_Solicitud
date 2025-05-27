@@ -4,20 +4,20 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        int NumeroDocumento =0, Edad =0, Telefono=0;
-        String NombreCompleto ="", CorreoElectronico ="", ProgramaInteres="";
+        double NumeroDocumento =0, Edad =0, Telefono=0;
+        String NombreCompleto ="", CorreoElectronico ="", ProgramaInteres ="";
         System.out.println("Por favor ingrese su nombre completo: ");
         NombreCompleto = sc.nextLine();
         System.out.println("Por favor ingrese su número de identificación:");
-        NumeroDocumento = sc.nextInt();
+        NumeroDocumento = sc.nextDouble();
         System.out.println("Por favor ingrese su edad: ");
-        Edad = sc.nextInt();
+        Edad = sc.nextDouble();
         System.out.println("Por favor ingrese su correo electrónico: ");
         CorreoElectronico = sc.next();
         System.out.println("Por favor ingrese su número de contacto: ");
-        Telefono = sc.nextInt();
+        Telefono = sc.nextDouble();
         System.out.println("Por favor escriba el programa por el cual se encuentra interesado: ");
-        ProgramaInteres = sc.nextLine();
+        ProgramaInteres = sc.next();
         if (Edad > 16 && CorreoElectronico.contains("@")) {
             System.out.println("La inscripción se ha realizado con exito.");
         } else {
